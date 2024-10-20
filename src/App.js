@@ -19,7 +19,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState('faturas');  
 
   useEffect(() => {
-    axios.get('http://teste-lumi-backend.vercel.app/api/fatura/faturas')  
+    axios.get('http://localhost:teste-lumi-backend.vercel.app/api/fatura/faturas')  
 
       .then((response) => {
         setContacts(response.data);  
