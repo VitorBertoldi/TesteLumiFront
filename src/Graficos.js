@@ -10,7 +10,7 @@ function Charts() {
   const [selectedClient, setSelectedClient] = useState(''); 
 
   useEffect(() => {
-    axios.get('http://teste-lumi-backend.vercel.app/api/fatura/faturas')  
+    axios.get('https://teste-lumi-backend.vercel.app/api/fatura/faturas')  
       .then((response) => {
         console.log(response.data); 
         setContacts(response.data);  
