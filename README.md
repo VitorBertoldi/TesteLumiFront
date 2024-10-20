@@ -60,7 +60,7 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 Para iniciar a aplicação em modo de desenvolvimento, execute o seguinte comando:
 
-A aplicação será iniciada e estará disponível em http://localhost:3000 por padrão. Você pode abrir essa URL em um navegador para ver a aplicação em funcionamento.
+A aplicação será iniciada e estará disponível em http://localhost:3000 por padrão. Você pode abrir essa URL em um navegador para ver a aplicação em funcionamento. O banco de dados e servidor esta em na nuvem em producão, logo nao precisa se preocupar com ele. Apenas inicie o programa com npm start e ira funcionar.
 ```bash
 npm start
 
