@@ -10,11 +10,11 @@ function Charts() {
   const [selectedClient, setSelectedClient] = useState(''); 
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/fatura/faturas')  
+    axios.get('http://teste-lumi-backend.vercel.app/api/fatura/faturas')  
       .then((response) => {
         console.log(response.data); 
         setContacts(response.data);  
-        setSelectedClient(response.data[0]?.numero_cliente || ''); // Selecionar o primeiro cliente automaticamente
+        setSelectedClient(response.data[0]?.numero_cliente || ''); 
       })
       .catch((error) => {
         console.error('Erro ao buscar dados:', error);
